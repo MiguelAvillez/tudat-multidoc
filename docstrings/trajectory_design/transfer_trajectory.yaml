@@ -337,11 +337,12 @@ functions:
   - name: getMgaTransferTrajectorySettingsWithoutDsm # [cpp]
 
     short_summary: |
-      Function to get the legs and nodes settings of a transfer with just upowered legs.
+      Function to get the legs and nodes settings of a transfer constituted by upowered legs.
     extended_summary: |
       Function determines the legs and nodes settings of a multi-gravity assist transfer trajectory consisting of:
       one initial node (departure or swingby), unpowered transfer leg(s) connected by swingby nodes, one final
-      (capture or swingby) node.
+      (capture or swingby) node. For details see Musegaas, 2012 [2]_.
+
       If the departure orbit and arrival orbit are provided as arguments, the initial node is a departure node, and the
       final node a capture node. If the departure/arrival orbit is not specified, the initial/final node is a swingby
       node.
@@ -391,7 +392,8 @@ functions:
     extended_summary: |
       Function determines the legs and nodes settings of a multi-gravity assist transfer trajectory consisting of:
       one initial node (departure or swingby), velocity-based DSM transfer leg(s) connected by swingby nodes, one final
-      (capture or swingby) node.
+      (capture or swingby) node. For details see Musegaas, 2012 [2]_.
+
       If the departure orbit and arrival orbit are provided as arguments, the initial node is a departure node, and the
       final node a capture node. If the departure/arrival orbit is not specified, the initial/final node is a swingby
       node.
@@ -441,7 +443,8 @@ functions:
     extended_summary: |
       Function determines the legs and nodes settings of a multi-gravity assist transfer trajectory consisting of:
       one initial node (departure or swingby), position-based DSM transfer leg(s) connected by swingby nodes, one final
-      (capture or swingby) node.
+      (capture or swingby) node. For details see Musegaas, 2012 [2]_.
+
       If the departure orbit and arrival orbit are provided as arguments, the initial node is a departure node, and the
       final node a capture node. If the departure/arrival orbit is not specified, the initial/final node is a swingby
       node.
@@ -490,7 +493,8 @@ functions:
     extended_summary: |
       Function determines the legs and nodes settings of a multi-gravity assist transfer trajectory consisting of:
       one initial node (departure or swingby), spherical shaping leg(s) connected by swingby nodes, one final
-      (capture or swingby) node.
+      (capture or swingby) node. For details see Roegiers, 2014 [3]_ (legs) and Musegaas, 2012 [2]_ (nodes).
+
       If the departure orbit and arrival orbit are provided as arguments, the initial node is a departure node, and the
       final node a capture node. If the departure/arrival orbit is not specified, the initial/final node is a swingby
       node.
@@ -572,7 +576,8 @@ functions:
     extended_summary: |
       Function determines the legs and nodes settings of a multi-gravity assist transfer trajectory consisting of:
       one initial node (departure or swingby), hodographic shaping leg(s) connected by swingby nodes, one final
-      (capture or swingby) node.
+      (capture or swingby) node. For details see Gondelach, 2012 [4]_ (legs) and Musegaas, 2012 [2]_ (nodes).
+
       If the departure orbit and arrival orbit are provided as arguments, the initial node is a departure node, and the
       final node a capture node. If the departure/arrival orbit is not specified, the initial/final node is a swingby
       node.
