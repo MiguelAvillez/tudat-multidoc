@@ -156,8 +156,8 @@ functions:
     short_summary: "Factory function for creating a cosine contribution to hodographic trajectory shaping."
     extended_summary: |
       Factory function for creating a cosine contribution to hodographic trajectory shaping. For a 
-      provided frequency :math:`f`, this adds a contribution :math:`K\cos(f\cdot T)` to the selected
-      velocity component, with :math:`T` the time since departure, and :math:`K` a free parameter.
+      provided frequency :math:`f`, this adds a contribution :math:`K\cos(f\cdot t)` to the selected
+      velocity component, with :math:`t` the time since departure, and :math:`K` a free parameter.
 
     parameters:
       - name: frequency # [py]
@@ -168,7 +168,7 @@ functions:
       type: BaseFunctionHodographicShaping # [py]
       description: "Settings object for a cosine contribution to hodographic shaping."
 
-  - name: hodograph_exponential
+  - name: hodograph_scaled_exponential
 
     short_summary: "Factory function for creating a exponential contribution to hodographic trajectory shaping."
     extended_summary: |
@@ -190,7 +190,7 @@ functions:
       description: "Settings object for a exponential contribution to hodographic shaping."
 
 
-  - name: hodograph_exponential_sine
+  - name: hodograph_scaled_exponential_sine
 
     short_summary: "Factory function for creating a exponential sine contribution to hodographic trajectory shaping."
     extended_summary: |
@@ -217,7 +217,7 @@ functions:
 
 
 
-  - name: hodograph_exponential_cosine
+  - name: hodograph_scaled_exponential_cosine
 
     short_summary: "Factory function for creating a exponential cosine contribution to hodographic trajectory shaping."
     extended_summary: |
@@ -244,7 +244,7 @@ functions:
 
 
 
-  - name: hodograph_power
+  - name: hodograph_scaled_power
 
     short_summary: "Factory function for creating a power function contribution to hodographic trajectory shaping."
     extended_summary: |
